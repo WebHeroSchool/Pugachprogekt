@@ -5,30 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>app.creation</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
-    <header>
-        <div class="#">app.creation</div>
-        <nav class="#">
-            <!--Названия классов проставлю в седующих уроках-->
-            <a href="#">start</a>
-            <a href="#">services</a>
-            <a href="#">about</a>
-            <a href="#">blog</a>
-            <a href="#">contact us</a>
-        </nav>
-    </header>
-    <section class="#">
-        <main class="#">
-            <h1>Building an App Without Design Expertise?</h1>
-            <p>I help tech startups design better digital products without hiring a full-time designer</p>
-            <button>Schedule free consultation</button>
-        </main>
-        <div class="#">
-            <img src="#" alt="#" srcset="#">
-        </div>
-    </section>
+<body class="page">
+    <div class="wraper">
+        <header class="page-header">
+            <div class="logo">app.creation</div>
+            <nav class="menu">
+                <a class="menu__item menu__item_start" href="#">start</a>
+                <a class="menu__item menu__item_services" href="#">services</a>
+                <a class="menu__item menu__item_about" href="#">about</a>
+                <a class="menu__item menu__item_blog" href="#">blog</a>
+                <a class="menu__item menu__item_contact" href="#">contact us</a>
+            </nav>
+        </header>
+        <section class="main-section">
+            <main class="main-content">
+                <h1 class="main-content__title">Building an App Without Design Expertise?</h1>
+                <p class="main-content__text">I help tech startups design better digital products without hiring a
+                    full-time
+                    designer</p>
+                <button class="main-content__button" type="button" name="button">Schedule free consultation</button>
+            </main>
+            <div class="picture-content">
+                <img class="picture-content__picture" src="img/Frame.png" alt="Классный рисунок">
+            </div>
+        </section>
+    </div>
+    <footer class="ellipse">
+        <div class="circle1"></div>
+        <!--я думаю можно было и span-ы добавить без инлайн блока?-->
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+    </footer>
 </body>
 
 </html>
