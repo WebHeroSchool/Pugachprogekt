@@ -1,31 +1,16 @@
-.page {
-}
-.page--header {
-}
 .logo {
     font-family: 'PT Serif', serif;
 }
-.nav {
+.menu {
     font-family: 'Roboto', sans-serif;   
 }
-.start {
-}
-.services {
-}
-.about {
-}
-.blog {
-}
-.contact {
-}
-.title {
+
+.main-content__title {
     font-family: 'PT Serif', serif;  
 }
-.text {
+.main-content__text {
     font-family: 'Roboto', sans-serif;
 }
-.button {
+.main-content__button {
     font-family: 'Roboto', sans-serif;
-}
-.Picture {
 }
