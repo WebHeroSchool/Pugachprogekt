@@ -2,109 +2,114 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url('../Pugachprogekt/fonts/roboto/roboto-v20-latin-regular.woff2');
-    src: url('../Pugachprogekt/fonts/roboto/roboto-v20-latin-regular.woff');
+    src: url(./fonts/roboto/roboto-v20-latin-regular.woff2);
+    src: url(./fonts/roboto/roboto-v20-latin-regular.woff);
 }
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    src: url('../Pugachprogekt/fonts/roboto/roboto-v20-latin-500.woff2');
-    src: url('../Pugachprogekt/fonts/roboto/roboto-v20-latin-500.woff');
+    src: url(./fonts/roboto/roboto-v20-latin-500.woff2);
+    src: url(./fonts/roboto/roboto-v20-latin-500.woff);
 }
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: url('../Pugachprogekt/fonts/roboto/roboto-v20-latin-700.woff2');
-    src: url('../Pugachprogekt/fonts/roboto/roboto-v20-latin-700.woff');
+    src: url(./fonts/roboto/roboto-v20-latin-700.woff2);
+    src: url(./fonts/roboto/roboto-v20-latin-700.woff);
 }
 @font-face {
-    font-family: 'PT Serif';
+    font-family: 'PT_Serif';
     font-style: normal;
     font-weight: 700;
-    src: url('../Pugachprogekt/fonts/pt-serif/pt-serif-v12-latin-700.woff2'); 
-    src: url('../Pugachprogekt/fonts/pt-serif/pt-serif-v12-latin-700.woff');
+    src: url(./fonts/pt-serif/pt-serif-v12-latin-700.woff2); 
+    src: url(./fonts/pt-serif/pt-serif-v12-latin-700.woff);
 }
-.page {
+body {
     margin: 0;
     height: 1080px;
 }
 .wraper {
+    margin: auto;
     width: 80%;
-    margin-left: 195px;
-    margin-right: 197px;
 }
-.page-header {
+.header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0 173px 0;
-    align-items: flex-start;
+    margin-bottom: 122px;
 }
 .logo {
-    width: 190px;
-    height: 35px;
-}
-.menu__item {
-    padding: 0 12px;
-}
-.menu__item:last-child {
-    padding-right: 0;
+width: 190px;
+height: 35px;
+    margin: 40px 0;
+    background: url('img/Group5.svg');
 }
 .menu {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-}
-.main-section {
     display: flex;
-    justify-content: space-between; 
-    align-items: flex-start;
+    align-items: center;
 }
-.main-content {
-    display: flex;
-    flex-direction: column;
+.menu__item {
+    position: relative;
+    margin: 0 14px;
+    font: 500 18px/21px 'Roboto',arial,helvetica,sans-serif;
+    color: #000;
+    text-decoration: none;
+    transition: opacity .5s;
 }
-.main-content__title {
-    font-family: 'PT Serif', serif;
+.menu__item:last-child {
+    margin-right: 10px;
+}
+.menu__item_active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #0056ec;
+}
+.menu__item:hover{
+    opacity: .5;
+}
+.menu__item:hover::after {
+    position: absolute;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #0056ec;
+}
+.main {
+   padding: 0 63% 149px 0;
+   background: top right no-repeat url(./img/Frame.svg);
+}
+.main__title {
+    margin: 0 0 40px 0;
+    font: 700 66px/87px 'PT_Serif', arial, helvetica, sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 66px;
-    line-height: 87px;
-    width: 567px;
-    height: 255px;
-    display: inline-block;
-    margin: 0;
-    padding-bottom: 40px;
+    padding-top: 76px;
 }
-.main-content__text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    width: 455px;
-    height: 52px;
-    display: inline-block;
-    padding-bottom: 40px;
+.main__title-text_highlight {
+    background: #ECF3FF;
+    
 }
-.main-content__button {
-    font-family: 'Roboto', sans-serif;
+.main__subtitle {
+    margin: 0 0 59px 0;
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    width: 271px;
-    height: 57px;
-    color: #FFFFFF;
+    font: 22px/26px 'Roboto', arial, helvetica, sans-serif;
+}
+.main__button {
+    padding: 16px 23px;
     background: #0056EC;
     border-radius: 4px;
+    font: 18px/21px 'Roboto', arial, helvetica, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: opacity .5s;
 }
-.picture-content {
-    width: 770px;
-    height: 657px; 
+.main__button:hover {
+    opacity: .5;
 }
 .ellipse {
     display: flex;
