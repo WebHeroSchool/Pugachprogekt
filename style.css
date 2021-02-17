@@ -26,6 +26,18 @@
     src: url(./fonts/pt-serif/pt-serif-v12-latin-700.woff2); 
     src: url(./fonts/pt-serif/pt-serif-v12-latin-700.woff);
 }
+@keyframes botton {
+    0% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+        opacity: .5;
+    }
+    100% {
+        padding: 20px 27px;
+    }
+}
 body {
     margin: 0;
     height: 1080px;
@@ -109,6 +121,7 @@ body {
     font: 700 22px/26px 'Roboto', arial, helvetica, sans-serif;
 }
 .main__button {
+    animation: botton .2s linear 5s infinite;
     padding: 16px 23px;
     background: #0056EC;
     border-radius: 4px;
