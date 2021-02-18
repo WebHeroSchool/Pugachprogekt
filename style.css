@@ -4,6 +4,7 @@
     font-weight: 400;
     src: url(./fonts/roboto/roboto-v20-latin-regular.woff2);
     src: url(./fonts/roboto/roboto-v20-latin-regular.woff);
+    font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
@@ -11,6 +12,7 @@
     font-weight: 500;
     src: url(./fonts/roboto/roboto-v20-latin-500.woff2);
     src: url(./fonts/roboto/roboto-v20-latin-500.woff);
+    font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
@@ -18,6 +20,7 @@
     font-weight: 700;
     src: url(./fonts/roboto/roboto-v20-latin-700.woff2);
     src: url(./fonts/roboto/roboto-v20-latin-700.woff);
+    font-display: swap;
 }
 @font-face {
     font-family: 'PT_Serif';
@@ -25,6 +28,7 @@
     font-weight: 700;
     src: url(./fonts/pt-serif/pt-serif-v12-latin-700.woff2); 
     src: url(./fonts/pt-serif/pt-serif-v12-latin-700.woff);
+    font-display: swap;
 }
 @keyframes botton {
     0% {
